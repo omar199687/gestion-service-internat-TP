@@ -125,7 +125,7 @@ public class Etudiant {
 		Etudiantbd e=new Etudiantbd();
 		resultat=e.inscription(request.getParameter("CIN"), request.getParameter("nom"), request.getParameter("prenom"), request.getParameter("sexe"), request.getParameter("email"), request.getParameter("password"), request.getParameter("image"));
 		e.closeconnection();
-		return resultat;
+		return resultat + "nouveau";
 		
 	}
 }
